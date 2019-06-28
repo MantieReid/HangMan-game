@@ -34,7 +34,7 @@ int main()
     "mexico",
     "france",
     "italy",
-    "south africa",
+    "southafrica",
     "japan",
     "australia",
     "egypt",
@@ -64,7 +64,7 @@ int main()
     break;
 
   case 3: //if  South africa  is chosen as the word to guess. Then give the player this hint. 
-    hint = "The country in which nelson mandela was born";
+    hint = "The country in which nelson mandela was born (Do not enter a space for this one)";
     break;
 
 
@@ -97,7 +97,7 @@ int main()
 
 
   // Initialize the secret word with the * character.
-  string unknown(word.length(), ' _'); //takes each letter of the word and displays it with *. 
+  string unknown(word.length(),'_'); //takes each letter of the word and displays it with *. 
 
   // welcome the user
   cout << "\n\nWelcome to hangman...Guess a country Name"; //starts a new line and prints the quoted text. 
