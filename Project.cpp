@@ -52,52 +52,52 @@ int main()
   switch (n) // a switch statement that will excute based on which word is chosen.  Range is from zero to 10. 
   {
   case 0: //if mexico is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country shares a border with the USA";
+    hint = "Hint :This country shares a border with the USA";
     break;
 
   case 1: //if  France  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has the Eiffel tower";
+    hint = "Hint: This country has the Eiffel tower";
     break;
 
   case 2: //if  Italy  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has the city called Rome";
+    hint = "Hint: This country has the city called Rome";
     break;
 
   case 3: //if  South africa  is chosen as the word to guess. Then give the player this hint. 
-    hint = "The country in which nelson mandela was born (Do not enter a space for this one)";
+    hint = "Hint: The country in which nelson mandela was born (Do not enter a space for this one)";
     break;
 
 
   case 4: //if  Japan  is chosen as the word to guess. Then give the player this hint. 
-    hint = "the country in which anime was created";
+    hint = "Hint: The country in which anime was created";
     break;
 
 
   case 5: //if  Australia  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has kangaroos";
+    hint = "Hint: This country has kangaroos";
       break;
 
   case 6:   //if  Egypt  is chosen as the word to guess. Then give the player this hint. 
-  hint = "This country has giant prymaids";
+  hint = "Hint: This country has giant prymaids";
     break;
 
 
   case 7: //if  Signapore  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has a amazing airport called  Changi Airport";
+    hint = "Hint: This country has a amazing airport called  Changi Airport";
     break;
 
   case 8: //if china  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has a place called bejjing.";
+    hint = "Hint: This country has a place called bejjing.";
     break;
 
   case 9: //if Turkey  is chosen as the word to guess. Then give the player this hint. 
-    hint = "This country has a place called Istanbul.";
+    hint = "Hint: This country has a place called Istanbul.";
     break;
   }
 
 
   // Initialize the secret word with the * character.
-  string unknown(word.length(),'_'); //takes each letter of the word and displays it with *. 
+  string unknown(word.length(), ('_')); //takes each letter of the word and displays it with -. 
 
   // welcome the user
   cout << "\n\nWelcome to hangman...Guess a country Name"; //starts a new line and prints the quoted text. 
