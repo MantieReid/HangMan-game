@@ -24,6 +24,7 @@ int main()
 
  // SetConsoleTextAttribute(hConsole, 40);
   string name;
+  string yes_or_no;
   char letter;
   int num_of_wrong_guesses = 0;
   string hint;
@@ -132,14 +133,46 @@ int main()
     if (word == unknown)
     {
       cout << word << endl; //prints the word selected for the user to guess. 
-      cout << "Yeah! You got it!";
+      cout << "\n\Yeah! You got it!" << endl;
+      cout << "\n\Would like to play another game of hangman?" << endl;
+      cout << "\n\Enter yes or no" << endl; 
+
+      cin >> yes_or_no;
+
+      if (yes_or_no == "yes") // if user says yes, then start the game again. 
+      {
+        main(); 
+      }
+
+
+      if (yes_or_no == "no") // if user says no, then end the game. 
+      {
+        cout << "Closing program" << endl;
+        return 0; //returns 0 to close the program. 
+      }
       break;
     }
   }
   if (num_of_wrong_guesses == MAX_TRIES) //to execute when the number of wrong guesses equals the number of max tries. 
   {
-    cout << "\nSorry, you lose...you've been hanged." << endl;
-    cout << "The word was : " << word << endl;
+    cout << "n\Sorry, you lose...you've been hanged." << endl;
+    cout << "n\The word was : " << word << endl;
+    cout << "n\Would like to play another game of hangman?" << endl;
+    cout << "n\Enter yes or no" << endl;
+
+    cin >> yes_or_no;
+
+    if (yes_or_no == "yes") // if user says yes, then start the game again. 
+    {
+      main();
+    }
+
+    if (yes_or_no == "no") // if user says no, then end the game. 
+    {
+      cout << "Closing program" << endl;
+        return 0; //returns 0 to close the program. 
+    }
+
   }
   cin.ignore();
   cin.get();
