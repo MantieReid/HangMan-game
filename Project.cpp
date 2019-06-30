@@ -109,7 +109,7 @@ int main()
   // Loop until the guesses are used up
   while (num_of_wrong_guesses < MAX_TRIES)
   {
-    cout << hint << endl;
+    cout << endl << hint << endl;
     cout << "\n\n" << unknown;         //new line  and the displays the word in a hidden way. 
     cout << "\n\nGuess a letter: ";    //prints the quoted text with a new line. 
     cin >> letter;                      //user enters the guessed letter.
