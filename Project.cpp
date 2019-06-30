@@ -45,13 +45,13 @@ int main()
 
   //choose and copy a word from array of words randomly
   srand(time(NULL));
-  int n = rand() % 10; //range from to 0 and 10. so it will basically choose randomnly any of these words. 
+  int n = rand() % 10; //range from to 0 and 10. so it will basically choose randomly any of these words. 
   word = words[n]; // word is equal to one of the country names in the array.
 
 
-  switch (n) // a switch statement that will excute based on which word is chosen.  Range is from zero to 10. 
+  switch (n) // a switch statement that will execute based on which word is chosen.  Range is from zero to 10. 
   {
-  case 0: //if mexico is chosen as the word to guess. Then give the player this hint. 
+  case 0: //if Mexico is chosen as the word to guess. Then give the player this hint. 
     hint = "Hint: This country shares a border with the USA";
     break;
 
@@ -63,8 +63,8 @@ int main()
     hint = "Hint: This country has the city called Rome";
     break;
 
-  case 3: //if  South africa  is chosen as the word to guess. Then give the player this hint. 
-    hint = "Hint: The country in which nelson mandela was born (Do not enter a space for this one)";
+  case 3: //if  South Africa  is chosen as the word to guess. Then give the player this hint. 
+    hint = "Hint: The country in which nelson Mandela was born (Do not enter a space for this one)";
     break;
 
 
@@ -78,16 +78,16 @@ int main()
       break;
 
   case 6:   //if  Egypt  is chosen as the word to guess. Then give the player this hint. 
-  hint = "Hint: This country has giant prymaids";
+  hint = "Hint: This country has giant pyramids";
     break;
 
 
-  case 7: //if  Signapore  is chosen as the word to guess. Then give the player this hint. 
+  case 7: //if  Singapore  is chosen as the word to guess. Then give the player this hint. 
     hint = "Hint: This country has a amazing airport called  Changi Airport";
     break;
 
   case 8: //if china  is chosen as the word to guess. Then give the player this hint. 
-    hint = "Hint: This country has a place called bejjing.";
+    hint = "Hint: This country has a place called Beijing.";
     break;
 
   case 9: //if Turkey  is chosen as the word to guess. Then give the player this hint. 
@@ -116,7 +116,7 @@ int main()
 
     // Fill secret word with letter if the guess is correct,
     // otherwise increment the number of wrong guesses.
-    if (letterFill(letter, word, unknown) == 0)  //returns the letter the user eneterd.  the current word selected and how much of the word the user has gussed. 
+    if (letterFill(letter, word, unknown) == 0)  //returns the letter the user entered.  the current word selected and how much of the word the user has guessed. 
     {
       cout << endl << "Whoops! That letter isn't in there!" << endl;   //prints the quoted text and ends line.
       num_of_wrong_guesses++; //increase the number of guesses by one. 
@@ -136,7 +136,7 @@ int main()
       break;
     }
   }
-  if (num_of_wrong_guesses == MAX_TRIES) //to excute when the number of wrong guesses equals the number of max tries. 
+  if (num_of_wrong_guesses == MAX_TRIES) //to execute when the number of wrong guesses equals the number of max tries. 
   {
     cout << "\nSorry, you lose...you've been hanged." << endl;
     cout << "The word was : " << word << endl;
@@ -147,7 +147,7 @@ int main()
 }
 
 /* Take a one character guess and the secret word, and fill in the
- unfinished guessword. Returns number of characters matched.
+ unfinished guess word. Returns number of characters matched.
  Also, returns zero if the character is already guessed. */
 
 int letterFill(char guess, string secretword, string& guessword)
@@ -170,13 +170,3 @@ int letterFill(char guess, string secretword, string& guessword)
   return matches;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
