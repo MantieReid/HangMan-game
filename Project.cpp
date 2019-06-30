@@ -52,7 +52,7 @@ int main()
   switch (n) // a switch statement that will excute based on which word is chosen.  Range is from zero to 10. 
   {
   case 0: //if mexico is chosen as the word to guess. Then give the player this hint. 
-    hint = "Hint :This country shares a border with the USA";
+    hint = "Hint: This country shares a border with the USA";
     break;
 
   case 1: //if  France  is chosen as the word to guess. Then give the player this hint. 
