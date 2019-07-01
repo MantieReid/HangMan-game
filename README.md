@@ -8,4 +8,4 @@ Download the program here at this [link.](https://github.com/MantieReid/HangMan-
 # Gif
 Gif of the program in action. 
 
-![alt text](https://github.com/MantieReid/HangMan-game/blob/master/c9E0idT0sj.gif)
+![alt text](https://github.com/MantieReid/HangMan-game/blob/master/R5gg12WPap.gif)
