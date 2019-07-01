@@ -119,15 +119,15 @@ int main()
     // otherwise increment the number of wrong guesses.
     if (letterFill(letter, word, unknown) == 0)  //returns the letter the user entered.  the current word selected and how much of the word the user has guessed. 
     {
-      cout << endl << "Whoops! That letter isn't in there!" << endl;   //prints the quoted text and ends line.
+      cout << endl << "\n\Whoops! That letter isn't in there!" << endl;   //prints the quoted text and ends line.
       num_of_wrong_guesses++; //increase the number of guesses by one. 
     }
     else
     {
-      cout << endl << "You found a letter! Isn't that exciting!" << endl; // print the text and ends the line. 
+      cout << endl << "\n\You found a letter! Isn't that exciting!" << endl; // print the text and ends the line. 
     }
     // Tell user how many guesses has left.
-    cout << "You have " << MAX_TRIES - num_of_wrong_guesses; //prints the number of guesses left. This is done by subtracting the number of guesses from the number of max tries. 
+    cout << "\n\You have " << MAX_TRIES - num_of_wrong_guesses; //prints the number of guesses left. This is done by subtracting the number of guesses from the number of max tries. 
     cout << " guesses left." << endl; //Prints the quoted text. 
     // Check if user guessed the word.
     if (word == unknown)
@@ -148,17 +148,18 @@ int main()
       if (yes_or_no == "no") // if user says no, then end the game. 
       {
         cout << "Closing program" << endl;
-        return 0; //returns 0 to close the program. 
+        return 0; //returns 0 to close the program.
+        
       }
       break;
     }
   }
   if (num_of_wrong_guesses == MAX_TRIES) //to execute when the number of wrong guesses equals the number of max tries. 
   {
-    cout << "n\Sorry, you lose...you've been hanged." << endl;
-    cout << "n\The word was : " << word << endl;
-    cout << "n\Would like to play another game of hangman?" << endl;
-    cout << "n\Enter yes or no" << endl;
+    cout << "\n\Sorry, you lose...you've been hanged." << endl;
+    cout << "\n\The word was " << word << endl;
+    cout << "\n\Would like to play another game of hangman?" << endl;
+    cout << "\n\Enter yes or no" << endl;
 
     cin >> yes_or_no;
 
@@ -170,13 +171,15 @@ int main()
     if (yes_or_no == "no") // if user says no, then end the game. 
     {
       cout << "Closing program" << endl;
-        return 0; //returns 0 to close the program. 
+        return 0; //returns 0 to close the program.
+       
     }
 
   }
-  cin.ignore();
-  cin.get();
-  return 0;
+  return 0; //ensures the program exits better. 
+  //cin.ignore(); not needed. Causes issues with exiting. 
+  //cin.get();  not needed. Causes issues with exiting. 
+ 
 }
 
 /* Take a one character guess and the secret word, and fill in the
