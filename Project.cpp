@@ -101,7 +101,7 @@ int main()
   string unknown(word.length(), ('_')); //takes each letter of the word and displays it with -. 
 
   // welcome the user
-  cout << "\n\nWelcome to hangman...Guess a country Name"; //starts a new line and prints the quoted text. 
+  cout << "\n\nWelcome to the guessing game...Guess a country Name"; //starts a new line and prints the quoted text. 
   cout << "\n\nEach letter is represented by a star."; //starts a new line and prints the quoted text. 
   cout << "\n\nYou have to type only one letter in one try";  //starts a new line and prints the quoted text. 
   cout << "\n\nYou have " << MAX_TRIES << " tries to try and guess the word.";  //Starts a new line. prints the quoted text and max number of tries. 
@@ -134,7 +134,7 @@ int main()
     {
       cout << word << endl; //prints the word selected for the user to guess. 
       cout << "\n\Yeah! You got it!" << endl;
-      cout << "\n\Would like to play another game of hangman?" << endl;
+      cout << "\n\Would like to play another round of guessing?" << endl;
       cout << "\n\Enter yes or no" << endl; 
 
       cin >> yes_or_no;
@@ -156,9 +156,9 @@ int main()
   }
   if (num_of_wrong_guesses == MAX_TRIES) //to execute when the number of wrong guesses equals the number of max tries. 
   {
-    cout << "\n\Sorry, you lose...you've been hanged." << endl;
+    cout << "\n\Sorry, you lose." << endl;
     cout << "\n\The word was " << word << endl;
-    cout << "\n\Would like to play another game of hangman?" << endl;
+    cout << "\n\Would like to play another round of guessing?" << endl;
     cout << "\n\Enter yes or no" << endl;
 
     cin >> yes_or_no;
