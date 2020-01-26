@@ -1,6 +1,6 @@
 # Word guessing game
 
-The player has 5 chances of guessing the word correctly. The word is a country’s name.  The program randomly picks a country’s name to guessed by the player.  There is a list of ten country’s names that will be randomly picked for the secret word. 
+The player has 5 chances of guessing the word correctly. The word is a country’s name.  The program randomly picks a country’s name to be guessed by the player.  There is a list of ten country’s names that will be randomly picked for the secret word. 
 
 The Orginal program comes from this website. Which can be found here at this [link](http://www.cppforschool.com/project/hangman-game-code.html) 
 
